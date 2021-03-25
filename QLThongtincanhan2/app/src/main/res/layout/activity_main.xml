@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_weight="1.2"
+    android:text="QUẢN LÝ THÔNG TIN"
+    android:layout_width="match_parent"
+    android:textStyle="bold"
+    android:textSize="30sp"
+    android:textColor="@color/white"
+    android:textAlignment="center"
+    android:gravity="center"
+    android:background="#004993"
+    android:layout_height="0dp"/>
+    <LinearLayout
+        android:layout_weight="0.8"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+        <Spinner
+            android:paddingLeft="20dp"
+            android:id="@+id/spinnerquequan"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:background="@drawable/btnloc"
+            android:id="@+id/btnlocquequan"
+            android:layout_weight="2"
+            android:text="Lọc quê quán"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:text="Tên"
+            android:textStyle="bold"
+            android:id="@+id/tvten_listview"
+            android:background="@drawable/bg_textview_1"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="SDT"
+            android:textStyle="bold"
+            android:id="@+id/tvsdt_listview"
+            android:background="@drawable/bg_textview_1"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:text="Địa chỉ"
+            android:textStyle="bold"
+            android:id="@+id/tvdiachi_listview"
+            android:background="@drawable/bg_textview_1"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_weight="6.6"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ListView
+            android:id="@+id/lvthongtin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+    <LinearLayout
+        android:layout_weight="0.8"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:background="@drawable/btnthem"
+            android:layout_weight="1"
+            android:id="@+id/btnthem"
+            android:text="Thêm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:background="@drawable/btnthoat"
+            android:layout_weight="1"
+            android:id="@+id/btnThoatApp"
+            android:text="Thoát"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

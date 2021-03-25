@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Layout_them_tt">
+    <TextView
+        android:layout_weight="1.5"
+    android:text="THÊM THÔNG TIN"
+    android:layout_width="match_parent"
+    android:textStyle="bold"
+    android:textSize="30sp"
+    android:textColor="@color/white"
+    android:textAlignment="center"
+    android:gravity="center"
+    android:background="#004993"
+    android:layout_height="0dp"/>
+    <ScrollView
+        android:layout_weight="8.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:text="Tên :"
+                android:textSize="30sp"
+                android:textStyle="italic|bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:hint="Nguyễn Văn A"
+                android:id="@+id/edtten_them"
+                android:textSize="28sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:text="Số điện thoại :"
+                android:textSize="30sp"
+                android:textStyle="italic|bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:hint="0xxx.xxx.xxx"
+                android:textSize="28sp"
+                android:id="@+id/edttsdt_them"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:text="Địa chỉ :"
+                android:textSize="30sp"
+                android:textStyle="italic|bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:hint="Địa chỉ của bạn"
+                android:textSize="28sp"
+                android:id="@+id/edtdiachi_them"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:text="Quê :"
+                android:textSize="30sp"
+                android:textStyle="italic|bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:id="@+id/spinnerquequan_them"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/btnthem"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:id="@+id/btnxacnhan_them"
+            android:text="Xác nhận"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:background="@drawable/btnthoat"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:id="@+id/btntrolai_them"
+            android:text="Trở lại"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>
